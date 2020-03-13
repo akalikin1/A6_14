@@ -28,7 +28,7 @@ function endGame() {
   $("#totalshots").text(totalshots);
   $("#misses").text(misses);
   $("#totalscore").text(maxHits - misses);
-  hitrate = (maxHits / totalshots).toFixed(2)
+  hitrate = (maxHits / totalshots * 100).toFixed(2)
   $("#hitrate").text(hitrate);
   $("#win-message").removeClass("d-none");
 }
